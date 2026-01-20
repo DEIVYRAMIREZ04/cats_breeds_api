@@ -91,8 +91,21 @@ Probar desde otra máquina:
 
 docker pull deivramirez/cats-breeds-api:latest
 docker run -p 3000:3000 deivramirez/cats-breeds-api:latest
+Nota:
+Con solo la imagen Docker no es suficiente para levantar el proyecto completo, ya que la API depende de una base de datos.
 
-Esto simula exactamente que otra persona levanta el proyecto desde cero.
+Para este proyecto se utiliza Docker Compose como orquestador, el cual define:
+
+la API
+
+la base de datos
+
+las variables de entorno
+
+la red entre contenedores
+
+El archivo docker-compose.yml no forma parte de la imagen Docker, por lo que debe obtenerse por separado (por ejemplo, clonando el repositorio o copiando únicamente dicho archivo).
+
 
 ✅ Criterios de entrega cubiertos
 Tests funcionales: Todos los endpoints del módulo de Cats (adopciones) están cubiertos y verificados.
