@@ -48,6 +48,7 @@ describe('Cats API (e2e)', () => {
 
     expect(response.body).toHaveProperty('id');
     catId = response.body.id;
+    expect(catId).toBe(response.body.id);
   });
 
 
