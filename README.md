@@ -49,6 +49,7 @@ En **NestJS** no usamos routers de la forma típica de Express (`adoption.router
 ### 1️⃣ Clonar el repositorio
 ```bash
 git clone https://github.com/DEIVYRAMIREZ04/cats_breeds_api.git
+npm init
 cd cats_breeds_api
 
 ---
